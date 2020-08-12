@@ -49,7 +49,7 @@ fy 你好
 ```
 这样便利的使用方式
 ### windows用户：
-只争对powershell
+只针对powershell
 #### 1.找到Microsoft.PowerShell_profile.ps1文件的位置
 ```
 $profile
