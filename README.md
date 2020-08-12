@@ -1,5 +1,5 @@
 # fanyi
-简单的python翻译小程序，支持英文到中文，中文到英文的翻译
+简单便利的python翻译小程序，支持英文到中文，中文到英文的翻译
 
 # 功能如下
 ## 1.支持翻译单个英语单词
@@ -39,3 +39,30 @@ python fy.py 你好
       "Hello world": "你好世界"
   }
 ```
+
+## 5.通过设置别名可以实现
+```
+fy 你好
+>>hello
+```
+这样便利的使用方式
+### windows用户：
+只争对powershell
+#### 1.找到Microsoft.PowerShell_profile.ps1文件的位置
+```
+$profile
+>>C:\Users\xx\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
+```
+#### 2.向Microsoft.PowerShell_profile.ps1添加
+```
+function fy {python 文件路径\fy.py $args}
+```
+
+
+
+### linux用户：
+在.bashrc中添加：
+```
+alias fy='python 文件路径/fy.py'
+```
+
